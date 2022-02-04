@@ -1,4 +1,4 @@
-#Sam's Flashcards
+# Sam's Flashcards
 A basic flashcard game, with a few questions to get to know me a little better. There are currently four cards, each containing a question with four possible answers.
 
 ### Try It Yourself!
