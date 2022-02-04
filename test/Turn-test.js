@@ -34,9 +34,12 @@ describe('Turns', () => {
   });
 
   it('should return true or false if the user guess is correct or incorrect', () => {
-    const card = new Card(1, 'What is the name of Sam\'s dog?', ['Brewster', 'Rory', 'Hades'], 'Rory');
-    const turnOne = new Turns('Rory', card);
-    const turnTwo = new Turns('Hades', card);
+    const card1 = new Card(1, `What is the name of Sam's dog?`, ['Brewster', 'Rory', 'Hades'], 'Rory');
+    const card2 = new Card(2, 'What is Sam\'s favorite animal?', ['cat', 'dog', 'hedgehog'], 'hedgehog');
+    const card3 = new Card(3, 'How old is Rory?', ['2', '5', '8'], '2');
+    const card4 = new Card(4, `What is the name of Sam's cat?`, ['Baby', 'Stella', 'Tinkerbell'], 'Tinkerbell');
+    const turnOne = new Turns('Rory', card1);
+    const turnTwo = new Turns('Hades', card1);
 
     turnOne.evaluateGuess();
     expect(turnOne.evaluateGuess()).to.equal(true);

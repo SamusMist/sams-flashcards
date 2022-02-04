@@ -17,10 +17,12 @@ class Turns {
   evaluateGuess() {
     if (this.guess === this.newCard.correctAnswer) {
       return true;
-    } else {
+      }
+    if (this.guess !== this.newCard.correctAnswer) {
       return false;
+      }
     }
-  }
+
   giveFeedback() {
     if (this.guess === this.newCard.correctAnswer) {
       return 'correct!';
